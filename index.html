@@ -15,7 +15,7 @@
 *{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);}
 
-/* TABS */
+
 .tabs{display:flex;background:#0f172a;padding:0 24px;gap:4px;position:sticky;top:0;z-index:100;}
 .tab-btn{background:none;border:none;color:#94a3b8;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;padding:14px 20px;cursor:pointer;border-bottom:3px solid transparent;transition:all .2s;text-transform:uppercase;letter-spacing:.5px;}
 .tab-btn:hover{color:white;}
@@ -23,7 +23,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);}
 .tab-content{display:none;}
 .tab-content.active{display:block;}
 
-/* HERO */
+
 .hero{background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 55%,#1d4ed8 100%);padding:44px 28px 36px;text-align:center;position:relative;overflow:hidden;}
 .hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 40px,rgba(255,255,255,.02) 40px,rgba(255,255,255,.02) 80px);}
 .hero-tag{display:inline-block;background:rgba(255,255,255,.1);color:#93c5fd;font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;padding:6px 18px;border-radius:100px;border:1px solid rgba(255,255,255,.15);margin-bottom:14px;}
@@ -37,19 +37,19 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);}
 .ci-label{font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;}
 .ci-val{font-size:13px;color:white;font-weight:600;margin-top:2px;}
 
-/* WORKOUT CARDS */
+
 .container{max-width:960px;margin:0 auto;padding:32px 20px 60px;}
 .day-section{margin-bottom:44px;}
 .day-header{display:flex;align-items:center;gap:14px;padding:18px 24px;border-radius:14px 14px 0 0;color:white;}
 .day-header.tue{background:linear-gradient(135deg,#1e3a8a,#3b5fcf);}
 .day-header.fri{background:linear-gradient(135deg,#14532d,#16a34a);}
-.day-badge{background:rgba(255,255,255,.2);border-radius:8px;padding:5px 14px;font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:2px;}
+.day-badge{background:rgba(255,255,255,.2);border-radius:8px;padding:5px 14px;font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:2px;}
 .day-title{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:2px;line-height:1;}
 .day-muscles{font-size:11px;color:rgba(255,255,255,.65);text-transform:uppercase;letter-spacing:1px;margin-top:3px;}
 
 .ex-cards-wrap{background:var(--card);border:1px solid var(--border);border-top:none;border-radius:0 0 14px 14px;overflow:hidden;}
 
-/* Clickable exercise card */
+
 .ex-card{
   display:grid;grid-template-columns:56px 96px 1fr auto;
   align-items:center;gap:0;
@@ -75,7 +75,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);}
 .ex-card:hover .ex-card-cta{opacity:1;}
 .ex-card.fri-card:hover .ex-card-cta{color:#16a34a;}
 
-/* Tips */
+
 .tips{background:var(--gold-bg);border:1px solid var(--gold-border);border-radius:14px;padding:18px 24px;display:flex;gap:14px;align-items:flex-start;margin-top:4px;}
 .tips-icon{font-size:26px;flex-shrink:0;margin-top:1px;}
 .tips-title{font-weight:700;font-size:13px;color:#92400e;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;}
@@ -83,7 +83,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);}
 .tips li{font-size:13px;color:#78350f;padding:2px 0;}
 .tips li::before{content:"→  ";font-weight:700;color:var(--gold);}
 
-/* ===== LOG ===== */
+
 .log-container{max-width:1020px;margin:0 auto;padding:32px 20px 60px;}
 .log-header{text-align:center;margin-bottom:28px;}
 .log-header h2{font-family:'Bebas Neue',sans-serif;font-size:42px;letter-spacing:3px;}
@@ -101,7 +101,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);}
 .save-bar{display:flex;gap:10px;align-items:center;justify-content:flex-end;margin-top:14px;flex-wrap:wrap;}
 .save-status{font-size:13px;color:var(--green2);font-weight:600;display:none;}
 
-/* Highlight for jumped-to exercise */
+
 .log-ex-card{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:14px;transition:box-shadow .3s;}
 .log-ex-card.highlight{box-shadow:0 0 0 3px #3b5fcf;animation:pulse 1s ease-out;}
 @keyframes pulse{0%{box-shadow:0 0 0 6px rgba(59,95,207,.4);}100%{box-shadow:0 0 0 3px #3b5fcf;}}
@@ -129,7 +129,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);}
 .log-day-hdr.fri{background:linear-gradient(135deg,#14532d,#16a34a);}
 .log-day-title{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:2px;}
 
-/* HISTORY */
+
 .history-section{margin-top:48px;}
 .history-section h3{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:2px;margin-bottom:14px;}
 .history-filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;align-items:center;}
@@ -155,7 +155,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);}
 .set-chip.fri-chip{background:var(--green-bg);border-color:var(--green-border);color:#15803d;}
 .pr-badge{background:#fef3c7;color:#92400e;border:1px solid #fcd34d;font-size:10px;font-weight:700;padding:2px 7px;border-radius:100px;margin-left:6px;}
 
-/* CHART */
+
 .chart-section{margin-top:44px;}
 .chart-section h3{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:2px;margin-bottom:14px;}
 .chart-controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;align-items:center;}
@@ -171,12 +171,12 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);}
   <button class="tab-btn" onclick="showTab('log',this)">📓 Progress Log</button>
 </div>
 
-<!-- ===== WORKOUT TAB ===== -->
+
 <div id="tab-workout" class="tab-content active">
 <div class="hero">
   <div class="hero-tag">Upper Body · 2 Days / Week · Goal: Shred</div>
   <h1>WORKOUT <span>PLAN</span></h1>
-  <p class="hero-sub">Tuesday &amp; Friday · 1 hour per session · Intermediate level</p>
+  <p class="hero-sub">DayOne &amp; DayTwo · 1 hour per session · Intermediate level</p>
   <div class="cardio-bar">
     <div class="cardio-item"><span class="ci-icon">🏃</span><div class="ci-label">Warm-up</div><div class="ci-val">5 min treadmill</div></div>
     <div class="cardio-item"><span class="ci-icon">💪</span><div class="ci-label">Strength</div><div class="ci-val">~50 min · 45–60s rest</div></div>
@@ -187,7 +187,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);}
 
   <div class="day-section">
     <div class="day-header tue">
-      <div class="day-badge">TUE</div>
+      <div class="day-badge">DayOne</div>
       <div><div class="day-title">Chest · Shoulders · Triceps</div><div class="day-muscles">Push Day · Click any exercise to log it</div></div>
     </div>
     <div class="ex-cards-wrap">
@@ -285,7 +285,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);}
   </div>
   <div class="day-section">
     <div class="day-header fri">
-      <div class="day-badge">FRI</div>
+      <div class="day-badge">DayTwo</div>
       <div><div class="day-title">Back · Biceps · Rear Delts</div><div class="day-muscles">Pull Day · Click any exercise to log it</div></div>
     </div>
     <div class="ex-cards-wrap">
@@ -396,7 +396,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);}
   </div>
 </div></div>
 
-<!-- ===== LOG TAB ===== -->
+
 <div id="tab-log" class="tab-content">
 <div class="log-container">
   <div class="log-header">
@@ -408,8 +408,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);}
     <input type="date" id="sessionDate">
     <label>Day:</label>
     <select id="sessionDay">
-      <option value="tue">Tuesday — Push (Chest / Shoulders / Triceps)</option>
-      <option value="fri">Friday — Pull (Back / Biceps / Rear Delts)</option>
+      <option value="tue">DayOne — Push (Chest / Shoulders / Triceps)</option>
+      <option value="fri">DayTwo — Pull (Back / Biceps / Rear Delts)</option>
     </select>
     <button class="btn btn-green" onclick="loadForm()">Load Session</button>
   </div>
@@ -481,19 +481,19 @@ function showTab(id, btn) {{
   if(id==='log') {{ renderHistory(); populateChartSelect(); }}
 }}
 
-// Jump from workout plan to log for specific exercise
+
 function goToLog(exKey, day) {
-  // Switch to log tab
+  
   document.querySelectorAll('.tab-content').forEach(e=>e.classList.remove('active'));
   document.querySelectorAll('.tab-btn').forEach(e=>e.classList.remove('active'));
   document.getElementById('tab-log').classList.add('active');
   document.querySelectorAll('.tab-btn')[1].classList.add('active');
 
-  // Set today's date and correct day
+ 
   document.getElementById('sessionDate').value = new Date().toISOString().split('T')[0];
   document.getElementById('sessionDay').value = day;
 
-  // Load form then scroll to exercise
+  
   loadForm(exKey);
   renderHistory(); populateChartSelect();
 }
@@ -518,7 +518,7 @@ function loadForm(scrollToKey) {
 
   document.getElementById('logDayHeader').innerHTML = `
     <div class="log-day-hdr ${cssClass}">
-      <div class="day-badge">${day==='tue'?'TUE':'FRI'}</div>
+      <div class="day-badge">${day==='dayone'?'DayOne':'DayTwo'}</div>
       <div class="log-day-title">${dayLabel}</div>
     </div>`;
 
@@ -577,7 +577,7 @@ function loadForm(scrollToKey) {
   document.getElementById('logCards').innerHTML = cardsHtml;
   document.getElementById('logForm').style.display = 'block';
 
-  // Scroll to and highlight specific exercise if coming from plan
+  
   if(scrollToKey) {
     setTimeout(()=>{
       const card = document.getElementById('card_'+scrollToKey);
