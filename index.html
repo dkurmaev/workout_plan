@@ -426,8 +426,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);}
     <div class="history-filters">
       <select id="histFilter" onchange="renderHistory()">
         <option value="all">All days</option>
-        <option value="tue">Tuesday only</option>
-        <option value="fri">Friday only</option>
+        <option value="tue">DayOne only</option>
+        <option value="fri">DayTwo only</option>
       </select>
       <button class="btn btn-sm" onclick="renderHistory()">🔄 Refresh</button>
     </div>
@@ -508,7 +508,7 @@ function loadForm(scrollToKey) {
   if(!date) { alert('Please select a date'); return; }
 
   const exercises = day==='tue' ? TUE_EX : FRI_EX;
-  const dayLabel  = day==='tue' ? 'Tuesday — Chest · Shoulders · Triceps' : 'Friday — Back · Biceps · Rear Delts';
+  const dayLabel  = day==='tue' ? 'DayOne — Chest · Shoulders · Triceps' : 'DayTwo — Back · Biceps · Rear Delts';
   const cssClass  = day==='tue' ? 'tue' : 'fri';
 
   const allData    = loadData();
@@ -630,9 +630,9 @@ function renderHistory() {
   const prs={};
   loadData().forEach(s=>s.exercises.forEach(ex=>{const mw=Math.max(...ex.sets.map(s=>s.weight||0));if(!prs[ex.key]||mw>prs[ex.key])prs[ex.key]=mw;}));
   container.innerHTML=data.map(session=>{
-    const dayLabel=session.day==='tue'?'Tuesday · Push':'Friday · Pull';
-    const cssClass=session.day==='tue'?'tue':'fri';
-    const chipCls=session.day==='fri'?'fri-chip':'has-data';
+    const dayLabel=session.day==='deyone'?'DayOne · Push':'DayTwo · Pull';
+    const cssClass=session.day==='deyone'?'dayone':'deytwo';
+    const chipCls=session.day==='daytwo'?'daytwo-chip':'has-data';
     const dateStr=new Date(session.date+'T12:00:00').toLocaleDateString('en-GB',{weekday:'long',year:'numeric',month:'short',day:'numeric'});
     const totalVol=session.exercises.reduce((s,e)=>s+(e.volume||0),0);
     const exBlocks=session.exercises.filter(e=>e.volume>0).map(ex=>{
